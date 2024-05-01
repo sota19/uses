@@ -1,0 +1,70 @@
+.time{
+    color:#5E17EB;
+    position: absolute;
+    font-size: 45px;
+    bottom: 84%;
+    left:8%;
+}
+
+img{
+    width: 400px;
+    position: relative;
+}
+
+.su1{
+    position: absolute;
+    font-size: 30px;
+    top:50%;
+    left:17%;
+}
+
+.su2{
+    position: absolute;
+    font-size: 30px;
+    top:55%;
+    left:17%;
+}
+
+.su3{
+    position: absolute;
+    font-size: 30px;
+    top:60%;
+    left:17%;
+}
+
+.su4{
+    position: absolute;
+    font-size: 30px;
+    top:65%;
+    left:17%;
+}
+
+#myChart{
+    position: absolute;
+    top:21%;
+    left:6%;
+    width: 250px;
+}
+
+.tot{
+    position: absolute;
+    font-size: 35px;
+    top:31.5%;
+    left:12%;
+}
+
+.form1{
+    width: 130px;
+}
+
+.form2{
+    width: 130px;
+}
+
+.form3{
+    width: 130px;
+}
+
+.form4{
+    width: 130px;
+}
