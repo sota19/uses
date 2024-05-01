@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index2</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="static/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <img src="static/総エリアにおける利用率.png" alt="Your image here">
+    <p class="time">{{ time }}</p>
+    <p class="su1">{{ a }}</p>
+    <p class="su2">{{ b }}</p>
+    <p class="su3">{{ c }}</p>
+    <p class="su4">{{ d }}</p>
+    <canvas id="myChart"></canvas>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var total = {{ total }};
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [total, 100 - total],
+                backgroundColor: ['rgba(94, 23, 235, 0.8)', 'rgba(136, 86, 235, 0.7)'],
+                borderColor: ['rgba(94, 23, 235, 0.8)', 'rgba(136, 86, 235, 0.7)'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: false,
+            plugins: {
+                title: {
+                    display: true,
+                }
+            }
+        }
+    });
+    </script>
+    <p class="tot">{{ total }}%</p>
+</body>
+</html>
